@@ -55,9 +55,9 @@ document.getElementById('donate-now').addEventListener('click',function(event){
     document.getElementById('my-balance').innerText=newmyBalance;
     document.getElementById('noakhali-balace').innerText=newnoakhaliBalace;
 
-    const currentDate = new Date().toLocaleDateString();
+    const currentDate2 = new Date().toLocaleDateString();
     const p = document.createElement('p');
-    p.innerText= `${donate} is donated for ` + document.getElementById('flood').innerText +  + ` Date: ${currentDate}`;
+    p.innerText= `${donate} is donated for ` + document.getElementById('flood').innerText  + ` Date: ${currentDate2}`;
 
     p.classList.add('border-2')
     p.classList.add('p-5')
@@ -82,7 +82,7 @@ document.getElementById('donate-money').addEventListener('click',function(event)
 
     document.getElementById('my-balance').innerText=newmyBalance;
     document.getElementById('quota-balace').innerText=newquotaBalace;
-    const br = document.createElement('br');
+    //const br = document.createElement('br');
     const currentDate = new Date().toLocaleDateString();
     const p = document.createElement('p');
     p.innerText= `${quota} is donated for ` + document.getElementById('quota-title').innerText  + ` Date: ${currentDate}`;
