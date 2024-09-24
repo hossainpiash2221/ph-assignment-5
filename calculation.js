@@ -10,6 +10,8 @@ function changeColor(){
     button2.style.backgroundColor="white";
 
 
+    document.getElementById('main').classList.remove('hidden');
+
 }
 
 function changeColor2(){
@@ -17,6 +19,8 @@ function changeColor2(){
     button.style.backgroundColor="#B4F461";
     const button2 = document.getElementById("donation");
     button2.style.backgroundColor="white";
+
+    document.getElementById('main').classList.add('hidden');
 
 
 }
@@ -51,6 +55,14 @@ document.getElementById('donate-now').addEventListener('click',function(event){
     document.getElementById('my-balance').innerText=newmyBalance;
     document.getElementById('noakhali-balace').innerText=newnoakhaliBalace;
 
+    const currentDate = new Date().toLocaleDateString();
+    const p = document.createElement('p');
+    p.innerText= `${donate} is donated for ` + document.getElementById('flood').innerText +  + ` Date: ${currentDate}`;
+
+    p.classList.add('border-2')
+    p.classList.add('p-5')
+    document.getElementById('transaction').appendChild(p);
+
 })
 
 
@@ -69,5 +81,14 @@ document.getElementById('donate-money').addEventListener('click',function(event)
 
     document.getElementById('my-balance').innerText=newmyBalance;
     document.getElementById('quota-balace').innerText=newquotaBalace;
+    const br = document.createElement('br');
+    const currentDate = new Date().toLocaleDateString();
+    const p = document.createElement('p');
+    p.innerText= `${quota} is donated for ` + document.getElementById('quota-title').innerText  + ` Date: ${currentDate}`;
+
+    p.classList.add('border-2')
+    p.classList.add('p-5')
+    document.getElementById('transaction').appendChild(p);
+    
 
 })
