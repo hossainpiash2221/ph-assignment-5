@@ -62,6 +62,7 @@ document.getElementById('donate-now').addEventListener('click',function(event){
     p.classList.add('border-2')
     p.classList.add('p-5')
     document.getElementById('transaction').appendChild(p);
+    alert("successfully donate");
 
 })
 
@@ -90,5 +91,6 @@ document.getElementById('donate-money').addEventListener('click',function(event)
     p.classList.add('p-5')
     document.getElementById('transaction').appendChild(p);
     
+    alert("successfully donate");
 
 })
