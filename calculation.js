@@ -11,6 +11,7 @@ function changeColor(){
 
 
     document.getElementById('main').classList.remove('hidden');
+    document.getElementById('transaction').classList.add('hidden');
 
 }
 
@@ -21,6 +22,7 @@ function changeColor2(){
     button2.style.backgroundColor="white";
 
     document.getElementById('main').classList.add('hidden');
+    document.getElementById('transaction').classList.remove('hidden');
 
 
 }
