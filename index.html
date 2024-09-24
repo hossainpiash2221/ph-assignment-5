@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <link rel="stylesheet" href="calculation.js">
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
         <div class="navbar-end">
           <h3 class="balance flex gap-2 items-center">
             <img class="" src="assets/coin.png" alt="">
-            <p><span id="balance-blue">5500</span> BDT</p>
+            <p><span id="my-balance">5500</span> BDT</p>
           </h3>
         </div>
       </div>
@@ -52,7 +54,7 @@
           <div>
             <button class="btn">
               <img src="assets/coin.png" alt="">
-              <p id="donate-balance">0</p>
+              <p id="noakhali-balace">0</p>
               <p>BDT</p>
             </button>
             <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -61,11 +63,11 @@
             </p>
             <label class="input input-bordered flex items-center gap-2">
               
-              <input type="text" class="grow" placeholder="Write Donation Amount" />
+              <input type="text" class="grow" placeholder="Write Donation Amount" id="noakhali" />
               
 
             </label>
-            <button class="btn btn-warning bg-[#B4F461] border-none w-full mt-5">Donate Now</button>
+            <button class="btn btn-warning bg-[#B4F461] border-none w-full mt-5" id="donate-now">Donate Now</button>
           </div>
         </div>
       </div>
@@ -82,7 +84,7 @@
           <div>
             <button class="btn">
               <img src="assets/coin.png" alt="">
-              <p id="donate-balance">2400</p>
+              <p id="Quota">2400</p>
               <p>BDT</p>
             </button>
             <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
@@ -91,11 +93,11 @@
             </p>
             <label class="input input-bordered flex items-center gap-2">
               
-              <input type="text" class="grow" placeholder="Write Donation Amount" />
+              <input type="text" class="grow" placeholder="Write Donation Amount" id="" />
               
 
             </label>
-            <button class="btn btn-warning bg-[#B4F461] border-none w-full mt-5">Donate Now</button>
+            <button class="btn btn-warning bg-[#B4F461] border-none w-full mt-5" id="donate-money">Donate Now</button>
           </div>
         </div>
       </div>
@@ -108,6 +110,7 @@
 
   </footer>
 
+ <script src="calculation.js"></script>
 </body>
 
 </html>
